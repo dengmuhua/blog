@@ -158,6 +158,310 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-PHP7新特性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/07/PHP7%E6%96%B0%E7%89%B9%E6%80%A7/">PHP7新特性</a>
+    </h1>
+  
+
+        
+        <a href="/2021/06/07/PHP7%E6%96%B0%E7%89%B9%E6%80%A7/" class="archive-article-date">
+  	<time datetime="2021-06-07T04:15:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="PHP7标量类型声明"><a href="#PHP7标量类型声明" class="headerlink" title="PHP7标量类型声明"></a>PHP7标量类型声明</h3><p><strong>在PHP7，一个新的功能，标量类型声明已被引入。标量类型声明有两种选择方式</strong></p>
+<ul>
+<li>一般方式 -  默认模式</li>
+<li>严格模式 - 严格模式有明确的暗示</li>
+</ul>
+<p><strong>示例 - 一般模式</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"><span class="keyword">int</span> ...<span class="variable">$ints</span></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> array_sum(<span class="variable">$ints</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">print</span>(sum(<span class="number">2</span>,<span class="string">&#x27;3&#x27;</span>,<span class="number">4.1</span>));</span><br></pre></td></tr></table></figure>
+
+<p><strong>示例 - 严格模式</strong></p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">declare</span>(strict_types = <span class="number">1</span>);</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"><span class="keyword">int</span> ...<span class="variable">$ints</span></span>)</span>&#123;</span><br><span class="line">	<span class="keyword">return</span> array_sum(<span class="variable">$ints</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">print</span>(sum(<span class="number">2</span>,<span class="string">&#x27;3&#x27;</span>,<span class="number">4.1</span>));</span><br></pre></td></tr></table></figure>
+
+<h3 id="空合并运算符"><a href="#空合并运算符" class="headerlink" title="空合并运算符"></a>空合并运算符</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$name</span> = <span class="variable">$name</span> ?? <span class="string">&quot;NoName&quot;</span>; <span class="comment">// 如果$name有值就取其值，否则设$name为“NoName”</span></span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2021/06/07/PHP7%E6%96%B0%E7%89%B9%E6%80%A7/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">PHP7</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">新特性</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/06/07/PHP7%E6%96%B0%E7%89%B9%E6%80%A7/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-PHP语法糖" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/07/PHP%E8%AF%AD%E6%B3%95%E7%B3%96/">PHP语法糖</a>
+    </h1>
+  
+
+        
+        <a href="/2021/06/07/PHP%E8%AF%AD%E6%B3%95%E7%B3%96/" class="archive-article-date">
+  	<time datetime="2021-06-07T04:10:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="PHP语法糖"><a href="#PHP语法糖" class="headerlink" title="PHP语法糖"></a>PHP语法糖</h3><blockquote>
+<p>计算机语言中添加的某种语法，这种语法对语言的功能并没有影响，但是更方便程序员使用。</p>
+</blockquote>
+<h3 id="常见的PHP语法糖"><a href="#常见的PHP语法糖" class="headerlink" title="常见的PHP语法糖"></a>常见的PHP语法糖</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">echo</span>(),<span class="keyword">print</span>(),<span class="keyword">die</span>(),<span class="keyword">isset</span>(),<span class="keyword">unset</span>(),<span class="keyword">include</span>(),<span class="keyword">include_once</span>(),<span class="keyword">require</span>(),<span class="keyword">require_once</span>(),<span class="keyword">array</span>(),<span class="keyword">list</span>(),<span class="keyword">empty</span>(),<span class="keyword">eval</span>()</span><br></pre></td></tr></table></figure>
+
+<h3 id="echo的逗号和点号"><a href="#echo的逗号和点号" class="headerlink" title="echo的逗号和点号"></a>echo的逗号和点号</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$foo</span> = <span class="string">&#x27;hello&#x27;</span>;</span><br><span class="line"><span class="variable">$bar</span> = <span class="string">&#x27;word&#x27;</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="variable">$foo</span> . <span class="variable">$bar</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="variable">$foo</span> , <span class="variable">$bar</span>;  <span class="comment">// 推荐使用</span></span><br></pre></td></tr></table></figure>
+
+<p> <strong>== 逗号优于点号 ==</strong></p>
+<h3 id="判断字符串的长度"><a href="#判断字符串的长度" class="headerlink" title="判断字符串的长度"></a>判断字符串的长度</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$str</span> = <span class="string">&#x27;hello&#x27;</span>;</span><br><span class="line"><span class="keyword">if</span>(strlen(<span class="variable">$str</span>) ===) <span class="keyword">echo</span> <span class="string">&#x27;do sth ...&#x27;</span>;</span><br><span class="line"><span class="keyword">if</span>(!<span class="keyword">isset</span>(<span class="variable">$str</span>[<span class="number">5</span>])) <span class="keyword">echo</span> <span class="string">&#x27;do sth ..&#x27;</span>; <span class="comment">// 推荐使用</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>strlen()函数执行起来相当快，只返回zaval结构中存储的已知字符串长度。但是由于strlen()是函数，多多少少会有些慢</p>
+</blockquote>
+<h3 id="使用-代替array"><a href="#使用-代替array" class="headerlink" title="使用[]代替array()"></a>使用[]代替array()</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$arr</span> = <span class="keyword">array</span>();</span><br><span class="line"><span class="variable">$arr</span> = [];</span><br><span class="line"></span><br><span class="line"><span class="variable">$arr</span> = <span class="keyword">array</span>(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>);</span><br><span class="line"><span class="variable">$arr</span> = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>]</span><br></pre></td></tr></table></figure>
+
+<h3 id="用…定义变长参数函数-PHP7的特性"><a href="#用…定义变长参数函数-PHP7的特性" class="headerlink" title="用…定义变长参数函数[PHP7的特性]"></a>用…定义变长参数函数[PHP7的特性]</h3><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">addAll</span>(<span class="params">...<span class="variable">$num</span></span>)</span>&#123;</span><br><span class="line">	<span class="variable">$sum</span> = array_sum(<span class="variable">$num</span>);</span><br><span class="line">	<span class="keyword">return</span> <span class="variable">$sum</span>;</span><br><span class="line">&#125;</span><br><span class="line">addAll(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>);</span><br></pre></td></tr></table></figure>
+        
+          <a class="article-more-a" href="/2021/06/07/PHP%E8%AF%AD%E6%B3%95%E7%B3%96/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">语法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/06/07/PHP%E8%AF%AD%E6%B3%95%E7%B3%96/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-PHP良好的代码规范" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/06/07/PHP%E8%89%AF%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/">PHP良好的代码规范</a>
+    </h1>
+  
+
+        
+        <a href="/2021/06/07/PHP%E8%89%AF%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/" class="archive-article-date">
+  	<time datetime="2021-06-07T04:05:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-06-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="PHP的命名"><a href="#PHP的命名" class="headerlink" title="PHP的命名"></a>PHP的命名</h3><ol>
+<li>命名的注意事项：</li>
+<li>命名要有实际的含义</li>
+<li>命名风格保持一致</li>
+<li>不用拼音命名</li>
+<li>不用语言关键字</li>
+</ol>
+<h3 id="适当使用注释"><a href="#适当使用注释" class="headerlink" title="适当使用注释"></a>适当使用注释</h3><blockquote>
+<p>终极要求：代码就是注释</p>
+</blockquote>
+<ol>
+<li>好的代码应该是自描述</li>
+<li>难以理解的地方加上注释</li>
+<li>函数的功能加上注释说明</li>
+<li>类的功能和使用方法加注释</li>
+</ol>
+<h3 id="多备份重要的代码"><a href="#多备份重要的代码" class="headerlink" title="多备份重要的代码"></a>多备份重要的代码</h3><ol>
+<li>代码不能只有一份</li>
+<li>启用编辑器的自动备份</li>
+<li>用代码管理工具备份</li>
+</ol>
+<h3 id="坚持字符编码统一"><a href="#坚持字符编码统一" class="headerlink" title="坚持字符编码统一"></a>坚持字符编码统一</h3><blockquote>
+<p>PHP文件编码 == 模板编码 == 数据库编码</p>
+</blockquote>
+<h3 id="使用之前，变量要初始化"><a href="#使用之前，变量要初始化" class="headerlink" title="使用之前，变量要初始化"></a>使用之前，变量要初始化</h3><blockquote>
+<p>使用一个未定义的变量，比使用一个定义好的变量要慢8倍以上！</p>
+</blockquote>
+<p>可以想象，PHP引擎会首先按照正常的逻辑来获取这个变量，然而这个变量不存在，所以PHP引擎需要抛出一个NOTICE，并且进入一段使用为定义变量是应该走的逻辑，然后返回一个新的变量。</p>
+<p>另外，阅读代码的角度讲，当你使用一个未定义的变量时，会让阅读的人困惑：“这个变量在哪里初始化的，和之前的代码有关系么？和include进来的文件有关系么？”</p>
+<h3 id="使用NULL-来代替is-null"><a href="#使用NULL-来代替is-null" class="headerlink" title="使用NULL === 来代替is_null"></a>使用NULL === 来代替is_null</h3><blockquote>
+<p>is_null和 NULL ===完全是一样的效果，但是却节省了一次函数调用</p>
+</blockquote>
+<h3 id="尽量使用-尽量不适用"><a href="#尽量使用-尽量不适用" class="headerlink" title="尽量使用 === 尽量不适用 =="></a>尽量使用 === 尽量不适用 ==</h3><blockquote>
+<p>PHP有两组相等比较运算符 === / !== 和 == / !=， == / !=会有隐式类型转换，而 === / !== 会严格比较两个操作时是否类型相同并且值相等</p>
+</blockquote>
+        
+          <a class="article-more-a" href="/2021/06/07/PHP%E8%89%AF%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">PHP</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">代码规范</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/06/07/PHP%E8%89%AF%E5%A5%BD%E7%9A%84%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -312,6 +616,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">PHP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">PHP7</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">新特性</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">代码规范</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">语法</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
